@@ -1,0 +1,12 @@
+{
+  "name": "transparent-notepad",
+  "version": "2.0.0",
+  "description": "PiP-like transparent floating notepad with features",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

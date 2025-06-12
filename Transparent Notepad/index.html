@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transparent Notepad</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(106, 85, 85, 0.1); /* semi-transparent */
+
+        }
+
+        .titlebar {
+            -webkit-app-region: drag;
+            height: 30px;
+            background: transparent;
+            color: limegreen;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            user-select: none;
+            position: relative;
+        }
+
+
+        .window-controls {
+            -webkit-app-region: no-drag;
+            /* So buttons remain clickable */
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+
+
+        #tabs {
+            flex: 0 0 auto;
+            /* Fixed height for titlebar and tabs */
+        }
+
+        #pages {
+            flex: 1;
+            /* Takes all remaining height */
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .btn {
+            -webkit-app-region: no-drag;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 14px;
+        }
+
+
+
+        .tab-btn {
+            -webkit-app-region: no-drag;
+            padding: 5px;
+            color: rgb(68, 72, 60);
+            cursor: pointer;
+            border: 1px solid rgb(154, 153, 153);
+        }
+
+        #addPageBtn,
+        #saveBtn {
+            -webkit-app-region: no-drag;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid rgb(186, 177, 177);
+            color: white;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            flex: 1;
+            /* Expands to fill remaining space inside #pages */
+            background: transparent;
+            color: white;
+            text-shadow:black 1px;
+            border: none;
+            resize: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+            -webkit-app-region: no-drag;
+        }
+
+        .dark {
+            background: rgba(255, 255, 255, 0.1);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- make the window draggable using Titlebar -->
+    <div class="titlebar">Transparent Notepad</div>
+
+
+
+    <div class="window-controls">
+        <button class="btn" onclick="window.api.minimize()">_</button>
+        <button class="btn" onclick="window.api.close()">X</button>
+    </div>
+
+    <div id="tabs"></div>
+    <button id="addPageBtn" style= "margin-left: 10px;" >+ Add Page</button>
+    <button id="saveBtn">💾 Save</button>
+    <button class="btn" onclick="toggleDarkMode()">🌓 Light Mode</button>
+
+    <div id="pages"></div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
