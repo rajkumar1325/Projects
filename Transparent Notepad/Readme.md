@@ -26,7 +26,8 @@ When you combine **basic coding knowledge** with **clever prompting skills** (an
 
 ## 🖥️ Demo Preview
 
-*Add screenshots or a GIF here if needed.*
+<img width="305" alt="02" src="https://github.com/user-attachments/assets/9d08d35e-2ff1-4f80-97b7-71e066eca945" />
+
 
 ---
 
@@ -43,21 +44,22 @@ When you combine **basic coding knowledge** with **clever prompting skills** (an
 
 - git is optional --> used for cloning purpose
 
+--- 
 
 # Installation Steps:
-### Clone the repository
+- Clone the repository
 git clone https://github.com/your-username/transparent-notepad.git
 
-### Navigate to project directory
+- Navigate to project directory
 cd transparent-notepad
 
-### Install all dependencies
+- Install all dependencies
 npm install
 
-### Start the Electron app
+- Start the Electron app
 npm start
 
-
+--- 
 
 # Project Folder Structure
 📁 transparent-notepad/
@@ -69,6 +71,7 @@ npm start
  ├── package.json       # App config & dependencies
  └── README.md          # This file
 
+---
 
 # Important NOTE
 ### The saved notes are stored here:
@@ -78,7 +81,7 @@ No cloud storage — purely local and secure.
 The app works cross-platform (Windows, macOS, Linux).
 
 
-
+---
 # 🔗 Connect with Me
 👤 Raj Kumar
 📫 Rajkumar.rk0104@gmail.com
