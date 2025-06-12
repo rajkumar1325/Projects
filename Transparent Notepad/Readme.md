@@ -39,3 +39,50 @@ When you combine **basic coding knowledge** with **clever prompting skills** (an
   ```bash
   node -v
   npm -v
+  git --version 
+
+- git is optional --> used for cloning purpose
+
+
+# Installation Steps:
+### Clone the repository
+git clone https://github.com/your-username/transparent-notepad.git
+
+### Navigate to project directory
+cd transparent-notepad
+
+### Install all dependencies
+npm install
+
+### Start the Electron app
+npm start
+
+
+
+# Project Folder Structure
+📁 transparent-notepad/
+ ├── main.js             # Electron main process (Window + Tray handling)
+ ├── preload.js         # Secure IPC bridge between main and renderer
+ ├── index.html         # Transparent UI layout (titlebar, buttons, tabs, pages)
+ ├── renderer.js        # Renderer logic (tabs, dark mode, save functionality)
+ ├── icon.png           # Tray icon
+ ├── package.json       # App config & dependencies
+ └── README.md          # This file
+
+
+# Important NOTE
+### The saved notes are stored here:
+- Windows: C:\Users\<Username>\AppData\Roaming\<app-name>\notes.txt
+- Linux/Mac: ~/.config/<app-name>/notes.txt
+No cloud storage — purely local and secure.
+The app works cross-platform (Windows, macOS, Linux).
+
+
+
+# 🔗 Connect with Me
+👤 Raj Kumar
+📫 Rajkumar.rk0104@gmail.com
+
+# ⭐ If you found this useful, consider giving this repo a Star!
+
+
