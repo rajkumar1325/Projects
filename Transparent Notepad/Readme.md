@@ -46,7 +46,7 @@ When you combine **basic coding knowledge** with **clever prompting skills** (an
 
 --- 
 
-# Installation Steps:
+## Installation Steps:
 - Clone the repository
 git clone https://github.com/your-username/transparent-notepad.git
 
@@ -61,7 +61,7 @@ npm start
 
 --- 
 
-# Project Folder Structure
+## Project Folder Structure
 📁 transparent-notepad/
  ├── main.js             # Electron main process (Window + Tray handling)
  ├── preload.js         # Secure IPC bridge between main and renderer
@@ -73,7 +73,7 @@ npm start
 
 ---
 
-# Important NOTE
+## Important NOTE
 ### The saved notes are stored here:
 - Windows: C:\Users\<Username>\AppData\Roaming\<app-name>\notes.txt
 - Linux/Mac: ~/.config/<app-name>/notes.txt
@@ -82,10 +82,10 @@ The app works cross-platform (Windows, macOS, Linux).
 
 
 ---
-# 🔗 Connect with Me
+## 🔗 Connect with Me
 👤 Raj Kumar
 📫 Rajkumar.rk0104@gmail.com
 
-# ⭐ If you found this useful, consider giving this repo a Star!
+### ⭐ If you found this useful, consider giving this repo a Star!
 
 
