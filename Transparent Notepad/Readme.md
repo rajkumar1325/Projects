@@ -25,8 +25,9 @@ When you combine **basic coding knowledge** with **clever prompting skills** (an
 ---
 
 ## 🖥️ Demo Preview
-<img width="305" alt="02" src="https://github.com/user-attachments/assets/9d08d35e-2ff1-4f80-97b7-71e066eca945" />
-![Image2)](https://github.com/user-attachments/assets/80b73753-47a5-4a73-b688-be21d6a13ba6)
+
+<img width="305" alt="Image1" src="https://github.com/user-attachments/assets/9d08d35e-2ff1-4f80-97b7-71e066eca945" />
+<img width="305" alt="Image2" src="https://github.com/user-attachments/assets/80b73753-47a5-4a73-b688-be21d6a13ba6" />
 
 
 ---
