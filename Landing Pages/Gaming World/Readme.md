@@ -85,6 +85,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ---
 
 📬 Contact
-Raj Kumar
-Email: Rajkumar.rk0104@gmail.com
-GitHub: @rajkumar1325
+- Raj Kumar
+- Email: Rajkumar.rk0104@gmail.com
+- GitHub: @rajkumar1325
