@@ -1,0 +1,6 @@
+[
+  { "keywords": ["hello", "hi", "wow"], "response": "Hi there! How can I assist you today?" },
+  { "keywords": ["how are you"], "response": "I'm just a bot, but I'm working perfectly!" },
+  { "keywords": ["crm"], "response": "CRM stands for Customer Relationship Management. It helps manage customer data and interactions." },
+  { "keywords": ["price"], "response": "premium: $1620 <br> sponsor: $999 <br> Basic : $499" }
+]
