@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="chatbot.js"></script>
+
+  <style>
+
+    body{
+      background-color: #212121;
+    }
+
+
+    /* TYPING INDICATOR ANIMATION */
+
+    /* container for the dots (flex layout, vertical centering, padding).*/
+    .typing-indicator {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+    }
+
+    /* three-dot thinking styling */
+    .typing-indicator span {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: #fa0000;
+      display: inline-block;
+      margin: 0 2px;
+      animation: bounce 1.4s infinite ease-in-out both;
+      /* animation-delay: 5s; */
+    }
+
+    @keyframes bounce {
+
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+
+      40% {
+        transform: scale(1.0);
+      }
+    }
+  </style>
+
+
+</head>
+
+<body style="background-color: #0F172A;">
+
+  <!-- Chatbot Floating Button -->
+  <button id="chatbotBtn"
+    class="fixed bottom-6 right-6 bg-green-600 hover:bg-blue-700 text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-lg">💬</button>
+
+  <!-- Chatbot Box -->
+  <div id="chatbotContainer" class="hidden fixed inset-0 flex flex-col" style="background-color: #1E293B;">
+
+    <!-- header-bar -->
+    <div class="text-white py-3 font-semibold flex justify-between items-center px-4" style="background-color: #2563EB;">
+      <span class="flex-1 text-center">CRM Assistant</span>
+      <button id="closeChatbotBtn" class="text-2xl font-bold">&times;</button> <!-- &times -- X symbol -->
+    </div>
+
+    <!-- for middle part -->
+    <div id="chatbotMessages" class="flex-1 overflow-y-auto px-3 my-5 space-y-2 text-sm "></div>
+
+    <!-- msg + buttton -->
+    <div class="flex border-t" style="background-color: #1E293B; color: #C9D1D9;">
+      <input id="userInput" type="text" placeholder="Type your message..." class="flex-1 px-3 py-2 outline-none" style="background-color: #1C2128;" />
+      <button id="sendBtn" class="text-white px-4" style="background-color: #3B82F6;">➤</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
