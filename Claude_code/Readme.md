@@ -1,4 +1,4 @@
-# 🦅 Rewriting Project Claw Code
+# 🦅 ClawCode — Learning Claude's Agent Harness in Python
 
 <div align="center">
 
