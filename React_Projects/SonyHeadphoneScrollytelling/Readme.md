@@ -1,7 +1,8 @@
 # 🎧 Sony WH-1000XM6 Scrollytelling Experience
 
 <p align="center">
-An Apple-inspired <b>scrollytelling</b> experience built with <b>React</b>, <b>Vite</b>, and the <b>HTML5 Canvas API</b>. The website transforms scrolling into an interactive storytelling experience by rendering a high-quality <b>192-frame image sequence</b>, creating smooth product animations commonly seen on premium hardware landing pages.
+  <b>An Apple-inspired Scrollytelling website built with React, Vite, and the HTML5 Canvas API.</b><br>
+  Experience smooth scroll-driven storytelling powered by a 192-frame image sequence, interactive overlays, and a premium glassmorphism interface.
 </p>
 
 <p align="center">
@@ -14,74 +15,101 @@ An Apple-inspired <b>scrollytelling</b> experience built with <b>React</b>, <b>V
 </p>
 
 <p align="center">
-<img src="./preview.gif" alt="Sony Scrollytelling Preview" width="100%">
+  <a href="https://sonywh1000.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-blue?style=for-the-badge" alt="Live Demo">
+  </a>
+
+  <a href="https://github.com/rajkumar1325/Projects/tree/main/React_Projects/SonyHeadphoneScrollytelling" target="_blank">
+    <img src="https://img.shields.io/badge/📂%20Source%20Code-GitHub-black?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
 </p>
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 **Coming Soon**
+🚀 **Experience the website here**
+
+**👉 https://sonywh1000.vercel.app**
+
+---
+
+## 🎥 Preview
+
+<p align="center">
+
+  <img width="800" height="500" alt="ScreenRecording2026-07-18at11 31 09PM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/7dafe2db-75f5-4513-a743-a3ce93e10617" />
+
+</p>
 
 ---
 
 # ✨ Features
 
-- 🎬 Apple-inspired **Scrollytelling** experience
-- 🖼️ **192-frame** canvas-based image sequence animation
-- 📜 Scroll-driven storytelling with floating content overlays
-- ⚡ Smooth frame interpolation using **requestAnimationFrame + LERP**
-- 📊 Interactive specifications section powered by **Framer Motion**
-- 🎨 Responsive glassmorphism interface
-- 🚀 Asset preloading with animated loading screen
+- 🎬 Apple-inspired Scrollytelling experience
+- 🖼️ 192-frame image sequence animation
+- 📜 Scroll-driven storytelling
+- 🎨 Sticky HTML5 Canvas rendering
+- ⚡ Smooth frame interpolation using `requestAnimationFrame`
+- 📊 Interactive technical specifications section
+- 🌫️ Modern Glassmorphism UI
 - 📱 Fully responsive layout
+- 🚀 Asset preloading with animated loading screen
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
-|------------|---------|
-| React 19 | UI Development |
-| Vite | Fast Development & Bundling |
-| HTML5 Canvas API | Image Sequence Rendering |
-| Framer Motion | UI Animations |
-| Lucide React | Icons |
-| Vanilla CSS | Styling & Glassmorphism |
-| Oxlint | Code Linting |
+|------------|----------|
+| **React 19** | UI Development |
+| **Vite** | Development & Bundling |
+| **HTML5 Canvas API** | Image Sequence Rendering |
+| **Framer Motion** | UI Animations |
+| **Lucide React** | Icons |
+| **Vanilla CSS** | Styling |
+| **Oxlint** | Code Linting |
 
 ---
 
 # ⚙️ How It Works
 
-Instead of playing a video, the animation is generated from **192 high-resolution image frames**.
+Instead of using a video, the animation is created from **192 high-resolution image frames**.
 
 As the user scrolls:
 
-- All frames are preloaded before the experience begins.
-- The current scroll position is converted into a target frame.
-- A `requestAnimationFrame()` loop smoothly interpolates toward that frame using Linear Interpolation (LERP).
-- The selected frame is rendered onto an **HTML5 Canvas**, while content overlays animate in sync with the scroll progress.
+- All image frames are preloaded.
+- Scroll position is converted into the corresponding animation frame.
+- A `requestAnimationFrame()` loop smoothly interpolates between frames using **Linear Interpolation (LERP)**.
+- The selected frame is rendered onto an **HTML5 Canvas**.
+- Floating overlays animate in sync with the user's scroll position.
 
-This approach provides precise scroll control, smoother reverse playback, and higher visual quality than traditional video-based animations.
+This technique provides smooth reverse playback, precise animation control, and higher visual quality than traditional video-based animations.
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```text
-sony-scrollytelling/
+SonyHeadphoneScrollytelling/
 │
 ├── public/
-│   └── asset_image/          # 192 image sequence frames
+│   └── asset_image/
+│       ├── ezgif-frame-001.jpg
+│       ├── ...
+│       └── ezgif-frame-192.jpg
+│
+├── screenshots/
+│   └── preview.gif
 │
 ├── src/
 │   ├── assets/
+│   │
 │   ├── components/
-│   │   ├── Loader.jsx        # Asset preloader
-│   │   ├── Navbar.jsx        # Navigation
-│   │   ├── Scrollytell.jsx   # Canvas rendering & scroll engine
-│   │   ├── Specs.jsx         # Interactive specifications
+│   │   ├── Loader.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Scrollytell.jsx
+│   │   ├── Specs.jsx
 │   │   └── Footer.jsx
 │   │
 │   ├── App.jsx
@@ -91,7 +119,8 @@ sony-scrollytelling/
 │
 ├── package.json
 ├── vite.config.js
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -101,7 +130,13 @@ sony-scrollytelling/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/sony-scrollytelling.git
+git clone https://github.com/rajkumar1325/Projects.git
+```
+
+### Navigate to the project
+
+```bash
+cd Projects/React_Projects/SonyHeadphoneScrollytelling
 ```
 
 ### Install dependencies
@@ -110,7 +145,7 @@ git clone https://github.com/your-username/sony-scrollytelling.git
 npm install
 ```
 
-### Run the development server
+### Start the development server
 
 ```bash
 npm run dev
@@ -124,44 +159,31 @@ npm run build
 
 ---
 
-# 📸 Screenshots
-
-> Replace these placeholders with your project screenshots or GIFs.
-
-| Hero Section | Product Animation |
-|--------------|-------------------|
-| ![](screenshots/hero.png) | ![](screenshots/animation.png) |
-
-| Specifications | Footer |
-|----------------|--------|
-| ![](screenshots/specs.png) | ![](screenshots/footer.png) |
-
----
-
 # 🚀 Future Improvements
 
-- GSAP + ScrollTrigger integration
+- GSAP + ScrollTrigger implementation
 - Lenis smooth scrolling
 - Three.js / React Three Fiber version
-- Product color switcher
-- Audio interaction
-- Dark / Light theme toggle
+- Product color selector
+- Sound interaction
+- Accessibility improvements
+- Enhanced mobile optimization
 
 ---
 
-# 🙌 Inspiration
+# 🙏 Inspiration
 
-This project is inspired by the premium product storytelling experiences found on modern hardware websites, where scrolling controls cinematic product animations to create an engaging user experience.
+Inspired by the premium product storytelling experiences found on Apple's flagship product pages and modern interactive hardware showcases.
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you enjoyed this project or found it useful:
+If you enjoyed this project, consider:
 
-- ⭐ Star the repository
-- 🍴 Fork the project
-- 💡 Share your feedback or suggestions
+- ⭐ Starring this repository
+- 🍴 Forking the project
+- 🛠️ Contributing improvements
 
 ---
 
@@ -169,4 +191,4 @@ If you enjoyed this project or found it useful:
 
 This project is created for **educational and portfolio purposes**.
 
-Product names and trademarks belong to their respective owners.
+All product names, trademarks, and brand assets belong to their respective owners.
