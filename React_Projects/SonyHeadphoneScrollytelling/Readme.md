@@ -187,8 +187,26 @@ If you enjoyed this project, consider:
 
 ---
 
-## 📄 License
+---
 
-This project is created for **educational and portfolio purposes**.
+# 👨‍💻 About the Developer
 
-All product names, trademarks, and brand assets belong to their respective owners.
+Hi, I'm **Raj Kumar**, a Full Stack Developer passionate about building modern web experiences, interactive UI, and scalable applications.
+
+If you enjoyed this project, feel free to connect with me!
+
+<p align="center">
+
+<a href="https://github.com/rajkumar1325">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://www.linkedin.com/in/rajkumar0104/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="mailto:Rajkumar.rk0104@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
+</a>
+
+</p>
