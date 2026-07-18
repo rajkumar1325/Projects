@@ -14,7 +14,7 @@
 
 </p>
 
-<p align="center">
+<p align="start">
   <a href="https://sonywh1000.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-blue?style=for-the-badge" alt="Live Demo">
   </a>
