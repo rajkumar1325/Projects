@@ -1,15 +1,7 @@
 # 🎧 Sony WH-1000XM6 Scrollytelling Experience
 
 <p align="center">
-
-A premium **Apple-inspired Scrollytelling** experience built with **React**, **Vite**, and the **HTML5 Canvas API**, featuring a smooth **192-frame image sequence animation**, immersive scroll-linked storytelling, floating content overlays, and a modern glassmorphic interface.
-
-Designed to demonstrate how high-end product landing pages are engineered using **Scroll-Driven Animations**, **Canvas Rendering**, and **Interactive UI Motion**.
-
-<br>
-
-<img src="./preview.gif" width="100%" alt="Sony Scrollytelling Preview">
-
+An Apple-inspired <b>scrollytelling</b> experience built with <b>React</b>, <b>Vite</b>, and the <b>HTML5 Canvas API</b>. The website transforms scrolling into an interactive storytelling experience by rendering a high-quality <b>192-frame image sequence</b>, creating smooth product animations commonly seen on premium hardware landing pages.
 </p>
 
 <p align="center">
@@ -18,323 +10,78 @@ Designed to demonstrate how high-end product landing pages are engineered using 
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-black?style=for-the-badge)
 ![Canvas](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=for-the-badge&logo=html5)
-![CSS](https://img.shields.io/badge/CSS3-Glassmorphism-1572B6?style=for-the-badge&logo=css3)
 
+</p>
+
+<p align="center">
+<img src="./preview.gif" alt="Sony Scrollytelling Preview" width="100%">
 </p>
 
 ---
 
-# ✨ Live Demo
+## 🌐 Live Demo
 
-> **Coming Soon**
-
----
-
-# 📖 Overview
-
-This project recreates the premium storytelling experience commonly seen on flagship product websites such as Apple and Sony.
-
-Instead of playing a traditional video, the product animation is rendered using a sequence of **192 high-resolution image frames** that are synchronized directly with the user's scroll position.
-
-The result is a cinematic, buttery-smooth browsing experience where scrolling becomes the animation timeline.
+🔗 **Coming Soon**
 
 ---
 
 # ✨ Features
 
-### 🎬 Apple-style Scrollytelling
-
-Scroll becomes the animation controller.
-
-Instead of watching a video, users literally control the playback frame-by-frame while scrolling.
-
----
-
-### 🖼️ Canvas Image Sequence Rendering
-
-- 192 pre-rendered HD frames
-- HTML5 Canvas rendering
-- High DPI support
-- Responsive scaling
-- Extremely smooth frame transitions
-
----
-
-### 🎯 Scroll-Driven Animation Engine
-
-Unlike time-based animations:
-
-✔ Scroll down → animation moves forward
-
-✔ Scroll up → animation reverses
-
-✔ Stop scrolling → animation pauses instantly
-
-Everything is directly linked to scroll progress.
-
----
-
-### 🎞️ Image Sequence Scrubbing
-
-Rather than loading a video, every animation frame is an individual image.
-
-```
-Frame 001
-Frame 002
-Frame 003
-...
-Frame 192
-```
-
-As the scroll position changes, the appropriate frame is rendered onto the canvas.
-
-This technique is widely used on premium product landing pages because it offers:
-
-- Higher image quality
-- Better browser compatibility
-- Frame-perfect control
-- Smooth reverse playback
-
----
-
-### 🚀 Smooth Frame Interpolation (LERP)
-
-Directly jumping between frames causes noticeable jitter.
-
-To solve this, the rendering engine uses **Linear Interpolation (LERP)** inside a continuous `requestAnimationFrame()` loop.
-
-```javascript
-currentFrame += (targetFrame - currentFrame) * 0.09;
-```
-
-This damping technique creates:
-
-- buttery smooth transitions
-- cinematic movement
-- natural easing
-- no frame skipping
-
----
-
-### 📜 Sticky Canvas Rendering
-
-The product remains fixed while the page scrolls underneath.
-
-```
-Canvas
-   │
-   │  (Sticky)
-   │
-────────────── Scroll
-────────────── Scroll
-────────────── Scroll
-```
-
-This allows the animation to remain centered while different story sections appear around it.
-
----
-
-### 💬 Floating Storytelling Overlays
-
-Content cards appear only during specific scroll ranges.
-
-Each overlay smoothly:
-
-- fades in
-- slides upward
-- remains visible
-- fades out
-
-The animation timing is calculated entirely from the current scroll percentage.
-
----
-
-### 📊 Interactive Technical Specifications
-
-The specifications section includes:
-
-- Animated category switching
-- Smooth active indicator
-- Dynamic content rendering
-- Glassmorphism design
-- Responsive layout
-
-Framer Motion powers the animated tab transitions.
-
----
-
-### 🎨 Modern UI Design
-
-Features include:
-
-- Glassmorphism
-- Soft gradients
-- Blur effects
-- Premium typography
-- Responsive layout
-- Dark theme
-- Modern spacing system
-
----
-
-### ⚡ Smart Asset Preloading
-
-Before rendering begins:
-
-- all 192 frames are preloaded
-- loading percentage updates live
-- progress bar animates
-- application waits until every frame is available
-
-This eliminates animation hiccups during scrolling.
+- 🎬 Apple-inspired **Scrollytelling** experience
+- 🖼️ **192-frame** canvas-based image sequence animation
+- 📜 Scroll-driven storytelling with floating content overlays
+- ⚡ Smooth frame interpolation using **requestAnimationFrame + LERP**
+- 📊 Interactive specifications section powered by **Framer Motion**
+- 🎨 Responsive glassmorphism interface
+- 🚀 Asset preloading with animated loading screen
+- 📱 Fully responsive layout
 
 ---
 
 # 🛠 Tech Stack
 
 | Technology | Purpose |
-|------------|----------|
-| React 19 | Component Architecture |
-| Vite | Lightning-fast Development Server |
-| Framer Motion | UI Animations |
+|------------|---------|
+| React 19 | UI Development |
+| Vite | Fast Development & Bundling |
 | HTML5 Canvas API | Image Sequence Rendering |
-| Vanilla CSS | Styling |
+| Framer Motion | UI Animations |
 | Lucide React | Icons |
+| Vanilla CSS | Styling & Glassmorphism |
 | Oxlint | Code Linting |
 
 ---
 
-# 🧠 How the Scrollytelling Engine Works
+# ⚙️ How It Works
 
-## Step 1 — Preload Assets
+Instead of playing a video, the animation is generated from **192 high-resolution image frames**.
 
-```
-192 Images
+As the user scrolls:
 
-↓
+- All frames are preloaded before the experience begins.
+- The current scroll position is converted into a target frame.
+- A `requestAnimationFrame()` loop smoothly interpolates toward that frame using Linear Interpolation (LERP).
+- The selected frame is rendered onto an **HTML5 Canvas**, while content overlays animate in sync with the scroll progress.
 
-Browser Memory
-```
-
-Every frame is loaded before the application becomes interactive.
-
----
-
-## Step 2 — Track Scroll Progress
-
-```
-Window Scroll
-
-↓
-
-Scroll Percentage
-
-↓
-
-Target Frame
-```
-
-The current scroll position is converted into an image frame index.
+This approach provides precise scroll control, smoother reverse playback, and higher visual quality than traditional video-based animations.
 
 ---
 
-## Step 3 — Smooth Interpolation
-
-```
-Target Frame
-
-↓
-
-LERP
-
-↓
-
-Current Frame
-```
-
-Rather than jumping instantly, the animation eases naturally toward the destination frame.
-
----
-
-## Step 4 — Canvas Rendering
-
-```
-Current Frame
-
-↓
-
-drawImage()
-
-↓
-
-Canvas
-```
-
-Each frame is rendered directly onto an HTML5 Canvas.
-
----
-
-## Step 5 — Overlay Synchronization
-
-Every overlay calculates:
-
-- opacity
-- translateY
-- visibility
-
-using the exact same scroll percentage.
-
-As a result, both the animation and text remain perfectly synchronized.
-
----
-
-# ⚙️ Technical Highlights
-
-✔ Scroll-linked animations
-
-✔ Image sequence scrubbing
-
-✔ Canvas rendering pipeline
-
-✔ requestAnimationFrame rendering loop
-
-✔ Linear interpolation (LERP)
-
-✔ Sticky rendering
-
-✔ Responsive canvas scaling
-
-✔ High-DPI rendering
-
-✔ Asynchronous image preloading
-
-✔ Framer Motion layout animations
-
-✔ Glassmorphism UI
-
-✔ Modular React architecture
-
----
-
-# 📁 Folder Structure
+# 📁 Project Structure
 
 ```text
 sony-scrollytelling/
 │
 ├── public/
-│   └── asset_image/
-│       ├── ezgif-frame-001.jpg
-│       ├── ...
-│       └── ezgif-frame-192.jpg
+│   └── asset_image/          # 192 image sequence frames
 │
 ├── src/
 │   ├── assets/
-│   │
 │   ├── components/
-│   │   ├── Loader.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Scrollytell.jsx
-│   │   ├── Specs.jsx
+│   │   ├── Loader.jsx        # Asset preloader
+│   │   ├── Navbar.jsx        # Navigation
+│   │   ├── Scrollytell.jsx   # Canvas rendering & scroll engine
+│   │   ├── Specs.jsx         # Interactive specifications
 │   │   └── Footer.jsx
 │   │
 │   ├── App.jsx
@@ -342,42 +89,34 @@ sony-scrollytelling/
 │   ├── index.css
 │   └── main.jsx
 │
-├── index.html
 ├── package.json
 ├── vite.config.js
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
 # 🚀 Getting Started
 
-## Clone the Repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/sony-scrollytelling.git
+git clone https://github.com/your-username/sony-scrollytelling.git
 ```
 
----
-
-## Install Dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
----
-
-## Start Development Server
+### Run the development server
 
 ```bash
 npm run dev
 ```
 
----
-
-## Build for Production
+### Build for production
 
 ```bash
 npm run build
@@ -385,69 +124,49 @@ npm run build
 
 ---
 
-## Preview Production Build
-
-```bash
-npm run preview
-```
-
----
-
 # 📸 Screenshots
 
-> Add screenshots or GIFs here.
+> Replace these placeholders with your project screenshots or GIFs.
 
-```
-Hero Section
+| Hero Section | Product Animation |
+|--------------|-------------------|
+| ![](screenshots/hero.png) | ![](screenshots/animation.png) |
 
-Animation
-
-Technical Specs
-
-Footer
-```
+| Specifications | Footer |
+|----------------|--------|
+| ![](screenshots/specs.png) | ![](screenshots/footer.png) |
 
 ---
 
-# 🔮 Future Improvements
+# 🚀 Future Improvements
 
-- GSAP ScrollTrigger integration
+- GSAP + ScrollTrigger integration
 - Lenis smooth scrolling
-- Three.js version
-- React Three Fiber support
-- Mobile performance optimization
-- Accessibility improvements
-- Dark/Light themes
-- Sound effects
-- Product configurator
-- Multiple product color variants
+- Three.js / React Three Fiber version
+- Product color switcher
+- Audio interaction
+- Dark / Light theme toggle
 
 ---
 
-# 🙏 Inspiration
+# 🙌 Inspiration
 
-Inspired by the interactive product storytelling experiences found on premium hardware websites, particularly Apple's flagship product pages and modern Sony product showcases.
+This project is inspired by the premium product storytelling experiences found on modern hardware websites, where scrolling controls cinematic product animations to create an engaging user experience.
 
 ---
 
-# ⭐ If You Like This Project
+## ⭐ Support
 
-If this project helped or inspired you:
+If you enjoyed this project or found it useful:
 
-⭐ Star this repository
-
-🍴 Fork it
-
-🛠️ Build something awesome with it
-
-Your support helps the project reach more developers!
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 💡 Share your feedback or suggestions
 
 ---
 
 ## 📄 License
 
-This project is intended for **educational and portfolio purposes**.
+This project is created for **educational and portfolio purposes**.
 
-All product names, trademarks, and brand assets belong to their respective owners.
-
-The implementation demonstrates front-end animation techniques and does not imply any official affiliation with Sony.
+Product names and trademarks belong to their respective owners.
